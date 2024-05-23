@@ -1,0 +1,46 @@
+{
+    "name": "intuit-ui-components",
+    "version": "0.3.0",
+    "private": false,
+    "type": "module",
+    "main": "dist/intuit-ui-components.umd.cjs",
+    "unpkg": "dist/intuit-ui-components.umd.min.js",
+    "jsdelivr": "dist/intuit-ui-components.umd.min.js",
+    "author": {
+        "name": "INTUIT"
+    },
+    "license": "MIT",
+    "files": [
+        "dist/*",
+        "src/*"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc && node script.build.mjs",
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs",
+        "preview": "vite preview",
+        "prepublish": "$npm_execpath build"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.0.4",
+        "@vuepress/bundler-vite": "^2.0.0-rc.11",
+        "@vuepress/theme-default": "^2.0.0-rc.30",
+        "oxlint": "^0.2.18",
+        "prettier": "3.2.5",
+        "typescript": "^5.2.2",
+        "vite": "^5.2.0",
+        "vite-plugin-oxlint": "^1.0.2",
+        "vue": "^3.4.27",
+        "vue-tsc": "^2.0.6",
+        "vuepress": "^2.0.0-rc.11"
+    },
+    "peerDependencies": {
+        "vue": "^3.0.0"
+    },
+    "keywords": [
+        "vue",
+        "component",
+        "library"
+    ]
+}
